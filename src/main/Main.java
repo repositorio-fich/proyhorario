@@ -30,6 +30,7 @@ public class Main {
     
     public static void main(String[] args) {
           Conexion cnx = new Conexion();
+//          cnx.ejectarComando("create table estudiante(id serial primary key, nombre varchar(50) not null, apellido varchar(50) not null, ci varchar(12) not null, sexo char(1) not null, telefono varchar(10) not null);  create table docente(id serial primary key, codigo int not null, nombre varchar(50) not null, apellido varchar(50) not null, profesion varchar(50) not null , ci varchar(12) not null, sexo char(1) not null, telefono varchar(10) not null);");
           cnx.ejectarComando("INSERT INTO estudiante (nombre, apellido, ci, sexo, telefono) VALUES ('Cecilio','Riojas Aguillera','83424','M','6984165')");
           buscarEstudiante(cnx);
         //FormEstudiante e = new FormEstudiante();

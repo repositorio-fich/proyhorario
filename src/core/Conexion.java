@@ -10,10 +10,10 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public final class Conexion {
-    private final String bd="app_curso_git";
-    private final String url="jdbc:postgresql://localhost:5432/"+bd;
-    private final String user="postgres";
-    private final String pass="439158";
+    private final String bd="b3ivhvjithvyjyj0jsup";
+    private final String url="jdbc:postgresql://b3ivhvjithvyjyj0jsup-postgresql.services.clever-cloud.com:5432/"+bd;
+    private final String user="uo48ex6kt9ythf2r0aae";
+    private final String pass="cIFPCq9Uabr6SfnPwfh4";
     private Connection cnx=null;
       
     public Conexion(){
