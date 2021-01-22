@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import presentacion.FormDocente;
 //import presentacion.FormDocente;
 //import presentacion.FormEstudiante;
 
@@ -36,7 +37,7 @@ public class Main {
         //FormEstudiante e = new FormEstudiante();
         //e.setVisible(true);
         
-        //FormDocente d = new FormDocente();
-        //d.setVisible(true);
+        FormDocente d = new FormDocente();
+        d.setVisible(true);
     }
 }
