@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import presentacion.FormEstudiante;
 //import presentacion.FormDocente;
 //import presentacion.FormEstudiante;
 
@@ -29,12 +30,24 @@ public class Main {
     }
     
     public static void main(String[] args) {
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(FormEstudiante.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        
+        
           Conexion cnx = new Conexion();
 //          cnx.ejectarComando("create table estudiante(id serial primary key, nombre varchar(50) not null, apellido varchar(50) not null, ci varchar(12) not null, sexo char(1) not null, telefono varchar(10) not null);  create table docente(id serial primary key, codigo int not null, nombre varchar(50) not null, apellido varchar(50) not null, profesion varchar(50) not null , ci varchar(12) not null, sexo char(1) not null, telefono varchar(10) not null);");
-          cnx.ejectarComando("INSERT INTO estudiante (nombre, apellido, ci, sexo, telefono) VALUES ('Cecilio','Riojas Aguillera','83424','M','6984165')");
-          buscarEstudiante(cnx);
-        //FormEstudiante e = new FormEstudiante();
-        //e.setVisible(true);
+//          cnx.ejectarComando("INSERT INTO estudiante (nombre, apellido, ci, sexo, telefono) VALUES ('Cecilio','Riojas Aguillera','83424','M','6984165')");
+//          buscarEstudiante(cnx);
+        FormEstudiante e = new FormEstudiante();
+        e.setVisible(true);
         
         //FormDocente d = new FormDocente();
         //d.setVisible(true);
