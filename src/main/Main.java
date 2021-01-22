@@ -9,8 +9,6 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import presentacion.FormEstudiante;
 import presentacion.FormDocente;
-//import presentacion.FormDocente;
-//import presentacion.FormEstudiante;
 
 public class Main {
     
