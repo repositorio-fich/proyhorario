@@ -50,5 +50,6 @@ public class Main {
         
         FormDocente d = new FormDocente();
         d.setVisible(true);
+        System.out.println("Desde github Desktop");
     }
 }
